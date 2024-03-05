@@ -29,26 +29,39 @@ console.log("JS Trial")
 
 
 
-let inputDistanceElement = document.getElementById('distance');
-let selectAgeElement = document.getElementById('age');
+
 let inputSubmitElement = document.getElementById('ticket-price');
 
-console.log(inputDistanceElement);
-console.log(selectAgeElement);
-console.log(inputSubmitElement);
+// console.log(inputSubmitElement);
 
-let kmPrice = 0.21; //Number
+
+
+
 
 
 inputSubmitElement.addEventListener('click', function(){
+    let inputDistanceElement = document.getElementById('distance');
+    let selectAgeElement = document.getElementById('age');
+    let inputPassengerElement = document.getElementById('passenger');
+
+    // console.log(inputDistanceElement);
+    // console.log(selectAgeElement);
+
+    
     let distance = inputDistanceElement.value;
     let age = selectAgeElement.value;
+    let passenger = inputPassengerElement.value;
 
+
+    let kmPrice = 0.21; //Number
     let basePrice = kmPrice * distance; //Number
 
+    
 
     console.log("Distanza: " + distance + " km")
     console.log("Sconto: " + age)
+    console.log("Nome Passeggero: " + passenger)
+
 
     if (age == 'minorenne'){
 
@@ -74,12 +87,25 @@ inputSubmitElement.addEventListener('click', function(){
 
     let finalPriceElement = document.getElementById('final-price');
 
+    let passengerNameElement = document.getElementById('passenger-name')
+
+    let carriageNumberElement = document.getElementById('carriage-number')
+
+    let ticketCodeElement = document.getElementById('ticket-code')
+
+
 
     fullPriceElement.innerHTML = basePrice + ' €';
 
     discountElement.innerHTML = age;
 
     finalPriceElement.innerHTML = totalPrice.toFixed(2) + ' €';
+
+    passengerNameElement.innerHTML = passenger;
+
+    carriageNumberElement.innerHTML = '8';
+
+    ticketCodeElement.innerHTML = 'ASDO78IHE2QO';
 })
 
 
