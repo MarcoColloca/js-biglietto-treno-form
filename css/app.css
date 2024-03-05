@@ -1,9 +1,46 @@
 
 
-
+.bg-darkgray{
+    background-color: rgb(65, 65, 65);
+}
 
 
 #train-img{
-    width: 50%;
+    width: 70%;
     aspect-ratio: 1/1;
+}
+
+
+.main__ticket--pricing{
+    color: white;
+    text-align: center;
+}
+
+.main__ticket--showcase{
+    margin-top: 100px;
+}
+
+
+.main__ticket--showcase__title{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.my-card{
+    height: 200px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.my-ticket-button{
+    margin-left: 35px;
 }

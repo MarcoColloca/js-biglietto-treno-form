@@ -11,52 +11,92 @@
 
 
 
-<body>
+<body class="bg-darkgray">
 
     <main>
         <!-- Your Price Section -->
-        <div class="container my-5">
-            <div class="row text-center">
-                <div class="col-12">
-                    <input type="text" id="distance" name="distance" placeholder="Inserire km percorsi">
-                    <select name="age" id="age">
-                        <option value="nessuno">Nessuno (default)</option>
-                        <option value="minorenne">Minorenne</option>
-                        <option value="over65">Over 65</option>
-                    </select>
-                    <!-- <input type="text" id="age" name="age" placeholder="Inserire età passeggero"> -->
-                    <input type="button" id="ticket-price" name="ticket-price" value="Calcola Prezzo">
+        <section class="main__ticket--pricing my-5">
+            <div class="container">
+                <h1 class="mb-5">
+                    Calcola il prezzo del tuo biglietto
+                </h1>
+
+                <div class="my-card">
+                    <div class="col-12 d-flex justify-content-around">
+                        <div>
+                            <h3>Nome e Cognome</h3>
+                            <input type="text" id="passenger" name="passenger" placeholder="Inserire nome e cognome">
+                        </div>
+                                    
+                        <div>
+                            <h3>Sconto</h3>
+                            <select name="age" id="age">
+                                <option value="nessuno">Nessuno (default)</option>
+                                <option value="minorenne">Minorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Chilometri</h3>
+                            <input type="text" id="distance" name="distance" placeholder="Inserire km percorsi">
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center text-success">
+                        <div class="my-ticket-button">
+                            <h5>Genera il Biglietto</h5>
+                            <input type="button" id="ticket-price" name="ticket-price" value="Invia">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
+        </section>
 
         <!-- Ticket Showcase Section -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="card mb-3">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-md-4">
-                                <img id="train-img" src="./img/14-512.webp" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">Prezzo Intero</h5>
-                                 <p id="full-price" class="card-text text-decoration-line-through">---</p>
+        <section class="main__ticket--showcase">
+            
 
-                                 <h5 class="card-title">Sconto Applicato</h5>
-                                    <p id="discount" class="card-text">...</p>
+            <div class="container ">
+                <h1 class="main__ticket--showcase__title">
+                    IL TUO BIGLIETTO
+                </h1>
 
-                                    <h5 class="card-title">Prezzo Scontato</h5>
-                                    <p id="final-price" class="card-text"><small class="card-text">...</small></p>
-                                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img id="train-img" src="./img/14-512.webp" class="img-fluid rounded-start" alt="...">
+                        </div>
+    
+                        <div class="col-md-5 d-flex align-items-start h-100">
+                            <div class="card-body h-100">
+                                <h5 class="card-title fw-bold text-center">Nome Passeggero</h5>
+                                <p id="passenger-name" class="card-text text-center">-</p>
+    
+                                <h5 class="card-title fw-bold text-center">Carrozza Treno</h5>
+                                <p id="carriage-number" class="card-text text-center">-</p>
+
+                                <h5 class="card-title fw-bold text-center">Codice Biglietto</h5>
+                                <p id="ticket-code" class="card-text text-center">-</p>
                             </div>
                         </div>
-                      </div>
+    
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-center">Prezzo Intero</h5>
+                                <p id="full-price" class="card-text text-center text-decoration-line-through">-</p>
+    
+                                <h5 class="card-title fw-bold text-center">Sconto Applicato</h5>
+                                <p id="discount" class="card-text text-center">-</p>
+    
+                                <h5 class="card-title fw-bold text-center">Prezzo Scontato</h5>
+                                <p id="final-price" class="card-text text-center"><small class="card-text">-</small></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
 
