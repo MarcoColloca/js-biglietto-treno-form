@@ -39,7 +39,7 @@ inputSubmitElement.addEventListener('click', function(){
     let distance = inputDistanceElement.value;
     let age = selectAgeElement.value;
 
-    let totalPrice = kmPrice * distance; //Number
+    let basePrice = kmPrice * distance; //Number
 
 
     console.log(distance + " km")
@@ -47,17 +47,34 @@ inputSubmitElement.addEventListener('click', function(){
 
     if (age == 'minorenne'){
 
-        let discount = totalPrice * 0.2; //Number
-        totalPrice = totalPrice - discount; //Number
+        let discount = basePrice * 0.2; //Number
+        totalPrice = basePrice - discount; //Number
     
     } else if (age == 'over65'){
     
-        let discount = totalPrice * 0.4 //Number
-        totalPrice = totalPrice - discount; //Number
+        let discount = basePrice * 0.4 //Number
+        totalPrice = basePrice - discount; //Number
     
-    } 
+    } else{
 
-    console.log("prezzo: " + totalPrice.toFixed(2) + " €")
+        totalPrice = basePrice; //Number
+
+    }
+
+    console.log("prezzo: " + totalPrice.toFixed(2) + " €");
+
+    let fullPriceElement = document.getElementById('full-price');
+
+    let discountElement = document.getElementById('discount');
+
+    let finalPriceElement = document.getElementById('final-price');
+
+
+    fullPriceElement.innerHTML = basePrice + ' €';
+
+    discountElement.innerHTML = age;
+
+    finalPriceElement.innerHTML = totalPrice.toFixed(2) + ' €';
 })
 
 
