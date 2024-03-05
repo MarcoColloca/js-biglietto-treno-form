@@ -14,6 +14,16 @@ console.log("JS Trial")
 ///     Stampare i prezzi per ogni variabile.
 
 
+
+//// PASSI ESERCIZIO MILESTONE 2
+///     Sostituire nell'HTML l'input relativo all'età con una select.
+///     Andare a modificare 'if' ed 'else if', facendo in modo che lo sconto venga applicato in base alla value dell'opzione selezionata nella select.
+///     Creare una pagina di recap nell'HTML.
+///     Stampare nella pagina tutti i dati ottenuti.
+
+
+
+
 let inputDistanceElement = document.getElementById('distance');
 let inputAgeElement = document.getElementById('age');
 let inputSubmitElement = document.getElementById('ticket-price');
