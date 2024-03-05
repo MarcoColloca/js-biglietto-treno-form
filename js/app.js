@@ -41,6 +41,8 @@ let inputSubmitElement = document.getElementById('ticket-price');
 
 inputSubmitElement.addEventListener('click', function(){
     let inputDistanceElement = document.getElementById('distance');
+    
+
     let selectAgeElement = document.getElementById('age');
     let inputPassengerElement = document.getElementById('passenger');
 
@@ -49,6 +51,8 @@ inputSubmitElement.addEventListener('click', function(){
 
     
     let distance = inputDistanceElement.value;
+    
+
     let age = selectAgeElement.value;
     let passenger = inputPassengerElement.value;
 
@@ -62,8 +66,16 @@ inputSubmitElement.addEventListener('click', function(){
     console.log("Sconto: " + age)
     console.log("Nome Passeggero: " + passenger)
 
+    console.log(inputPassengerElement.outerHTML)
 
-    if (age == 'minorenne'){
+    if(isNaN(distance)){
+        alert("Attenzione!! Non hai inserito un numero all'interno dei chilometri!");
+    }else if (distance <= 0){
+        alert("Attenzione!! I km devono essere maggiori di 0!");
+    } if(passenger == ""){
+        alert('Attenzione!! Inserire Nome e Cognome.');
+
+    }else if (age == 'minorenne'){
 
         let discount = basePrice * 0.2; //Number
         totalPrice = basePrice - discount; //Number
