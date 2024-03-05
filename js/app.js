@@ -25,11 +25,11 @@ console.log("JS Trial")
 
 
 let inputDistanceElement = document.getElementById('distance');
-let inputAgeElement = document.getElementById('age');
+let selectAgeElement = document.getElementById('age');
 let inputSubmitElement = document.getElementById('ticket-price');
 
 console.log(inputDistanceElement);
-console.log(inputAgeElement);
+console.log(selectAgeElement);
 console.log(inputSubmitElement);
 
 let kmPrice = 0.21; //Number
@@ -37,20 +37,20 @@ let kmPrice = 0.21; //Number
 
 inputSubmitElement.addEventListener('click', function(){
     let distance = inputDistanceElement.value;
-    let age = inputAgeElement.value;
+    let age = selectAgeElement.value;
 
     let totalPrice = kmPrice * distance; //Number
 
 
     console.log(distance + " km")
-    console.log(age + " anni")
+    console.log("Sconto: " + age)
 
-    if (age < 18){
+    if (age == 'minorenne'){
 
         let discount = totalPrice * 0.2; //Number
         totalPrice = totalPrice - discount; //Number
     
-    } else if (age > 65){
+    } else if (age == 'over65'){
     
         let discount = totalPrice * 0.4 //Number
         totalPrice = totalPrice - discount; //Number
