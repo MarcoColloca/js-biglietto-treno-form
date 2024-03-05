@@ -1,4 +1,8 @@
 
+input{
+    text-align: center;
+}
+
 
 .bg-darkgray{
     background-color: rgb(65, 65, 65);
@@ -41,6 +45,3 @@
     
 }
 
-.my-ticket-button{
-    margin-left: 35px;
-}
