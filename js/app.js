@@ -20,6 +20,11 @@ console.log("JS Trial")
 ///     Andare a modificare 'if' ed 'else if', facendo in modo che lo sconto venga applicato in base alla value dell'opzione selezionata nella select.
 ///     Creare una pagina di recap nell'HTML.
 ///     Stampare nella pagina tutti i dati ottenuti.
+///         • Assegnare un ID nell'HTML agli elementi che voglio modificare.
+///         • Recupereare gli elementi (utilizzando .getElementById) in Javascript assegnandoli ad una variabile.
+///         • Andare a modificare gli elementi all'interno dell'HTML (utilizzando .innerHTML)
+///        !!! FARE ATTENZIONE AD INSERIRE QUESTA PARTE NEL ADD.EVENT.LISTENER, IN MODO CHE LE MODIFICHE VENGANO APPLICATE AL CALCOLO DEL PREZZO !!!
+
 
 
 
@@ -42,7 +47,7 @@ inputSubmitElement.addEventListener('click', function(){
     let basePrice = kmPrice * distance; //Number
 
 
-    console.log(distance + " km")
+    console.log("Distanza: " + distance + " km")
     console.log("Sconto: " + age)
 
     if (age == 'minorenne'){
