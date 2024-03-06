@@ -50,10 +50,10 @@ inputSubmitElement.addEventListener('click', function(){
     // console.log(selectAgeElement);
 
     
-    let distance = inputDistanceElement.value;
+    let distance = parseFloat(inputDistanceElement.value);
     
-
     let age = selectAgeElement.value;
+
     let passenger = inputPassengerElement.value;
 
 
@@ -66,7 +66,6 @@ inputSubmitElement.addEventListener('click', function(){
     console.log("Sconto: " + age)
     console.log("Nome Passeggero: " + passenger)
 
-    console.log(inputPassengerElement.outerHTML)
 
     if(isNaN(distance)){
         alert("Attenzione!! Non hai inserito un numero all'interno dei chilometri!");
