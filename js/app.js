@@ -30,31 +30,31 @@ console.log("JS Trial")
 
 
 
-let inputSubmitElement = document.getElementById('ticket-price');
+let inputSubmitElement = document.getElementById('ticket-price'); //string
 
 // console.log(inputSubmitElement);
 
-let inputCancelElement = document.getElementById('ticket-cancel');
+let inputCancelElement = document.getElementById('ticket-cancel'); //string
 
 
 
 
 inputSubmitElement.addEventListener('click', function(){
-    let inputDistanceElement = document.getElementById('distance');
+    let inputDistanceElement = document.getElementById('distance'); //string
     
+    let selectAgeElement = document.getElementById('age'); //string
 
-    let selectAgeElement = document.getElementById('age');
-    let inputPassengerElement = document.getElementById('passenger');
+    let inputPassengerElement = document.getElementById('passenger'); //string
 
     // console.log(inputDistanceElement);
     // console.log(selectAgeElement);
 
     
-    let distance = parseFloat(inputDistanceElement.value);
+    let distance = parseFloat(inputDistanceElement.value); //number
     
-    let age = selectAgeElement.value;
+    let age = selectAgeElement.value; //string
 
-    let passenger = inputPassengerElement.value;
+    let passenger = inputPassengerElement.value; //string
 
 
     let kmPrice = 0.21; //Number
@@ -92,31 +92,31 @@ inputSubmitElement.addEventListener('click', function(){
 
     console.log("prezzo: " + totalPrice.toFixed(2) + " €");
 
-    let fullPriceElement = document.getElementById('full-price');
+    let fullPriceElement = document.getElementById('full-price'); //string
 
-    let discountElement = document.getElementById('discount');
+    let discountElement = document.getElementById('discount'); //string
 
-    let finalPriceElement = document.getElementById('final-price');
+    let finalPriceElement = document.getElementById('final-price'); //string
 
-    let passengerNameElement = document.getElementById('passenger-name')
+    let passengerNameElement = document.getElementById('passenger-name'); //string
 
-    let carriageNumberElement = document.getElementById('carriage-number')
+    let carriageNumberElement = document.getElementById('carriage-number'); //string
 
-    let ticketCodeElement = document.getElementById('ticket-code')
+    let ticketCodeElement = document.getElementById('ticket-code'); //string
 
 
 
-    fullPriceElement.innerHTML = basePrice.toFixed(2) + ' €';
+    fullPriceElement.innerHTML = basePrice.toFixed(2) + ' €'; //string
 
     discountElement.innerHTML = age;
 
-    finalPriceElement.innerHTML = totalPrice.toFixed(2) + ' €';
+    finalPriceElement.innerHTML = totalPrice.toFixed(2) + ' €'; //string
 
-    passengerNameElement.innerHTML = passenger;
+    passengerNameElement.innerHTML = passenger; //string
 
-    carriageNumberElement.innerHTML = '8';
+    carriageNumberElement.innerHTML = '8'; //string
 
-    ticketCodeElement.innerHTML = 'ASDO78IHE2QO';
+    ticketCodeElement.innerHTML = 'ASDO78IHE2QO'; //string
 })
 
 
@@ -124,29 +124,29 @@ inputSubmitElement.addEventListener('click', function(){
 
 inputCancelElement.addEventListener('click', function(){
 
-    let fullPriceElement = document.getElementById('full-price');
+    let fullPriceElement = document.getElementById('full-price'); //string
 
-    let discountElement = document.getElementById('discount');
+    let discountElement = document.getElementById('discount'); //string
 
-    let finalPriceElement = document.getElementById('final-price');
+    let finalPriceElement = document.getElementById('final-price'); //string
 
-    let passengerNameElement = document.getElementById('passenger-name')
+    let passengerNameElement = document.getElementById('passenger-name'); //string
 
-    let carriageNumberElement = document.getElementById('carriage-number')
+    let carriageNumberElement = document.getElementById('carriage-number'); //string
 
-    let ticketCodeElement = document.getElementById('ticket-code')
+    let ticketCodeElement = document.getElementById('ticket-code'); //string
 
 
 
-    fullPriceElement.innerHTML = '-';
+    fullPriceElement.innerHTML = '-'; //string
 
-    discountElement.innerHTML = '-';
+    discountElement.innerHTML = '-'; //string
 
-    finalPriceElement.innerHTML = '-';
+    finalPriceElement.innerHTML = '-'; //string
 
-    passengerNameElement.innerHTML = '-';
+    passengerNameElement.innerHTML = '-'; //string
 
-    carriageNumberElement.innerHTML = '-';
+    carriageNumberElement.innerHTML = '-'; //string
 
-    ticketCodeElement.innerHTML = '-';
+    ticketCodeElement.innerHTML = '-'; //string
 })
