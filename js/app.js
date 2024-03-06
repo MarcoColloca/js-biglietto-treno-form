@@ -30,21 +30,21 @@ console.log("JS Trial")
 
 
 
-let inputSubmitElement = document.getElementById('ticket-price'); //string
+let inputSubmitElement = document.getElementById('ticket-price'); //object || null
 
 // console.log(inputSubmitElement);
 
-let inputCancelElement = document.getElementById('ticket-cancel'); //string
+let inputCancelElement = document.getElementById('ticket-cancel'); //object || null
 
 
 
 
 inputSubmitElement.addEventListener('click', function(){
-    let inputDistanceElement = document.getElementById('distance'); //string
+    let inputDistanceElement = document.getElementById('distance'); //object || null
     
-    let selectAgeElement = document.getElementById('age'); //string
+    let selectAgeElement = document.getElementById('age'); //object || null
 
-    let inputPassengerElement = document.getElementById('passenger'); //string
+    let inputPassengerElement = document.getElementById('passenger'); //object || null
 
     // console.log(inputDistanceElement);
     // console.log(selectAgeElement);
@@ -91,18 +91,18 @@ inputSubmitElement.addEventListener('click', function(){
     }
 
     console.log("prezzo: " + totalPrice.toFixed(2) + " €");
+object || null
+    let fullPriceElement = document.getElementById('full-price'); //object || null
 
-    let fullPriceElement = document.getElementById('full-price'); //string
+    let discountElement = document.getElementById('discount'); //object || null
 
-    let discountElement = document.getElementById('discount'); //string
+    let finalPriceElement = document.getElementById('final-price'); //object || null
 
-    let finalPriceElement = document.getElementById('final-price'); //string
+    let passengerNameElement = document.getElementById('passenger-name'); //object || null
 
-    let passengerNameElement = document.getElementById('passenger-name'); //string
+    let carriageNumberElement = document.getElementById('carriage-number'); //object || null
 
-    let carriageNumberElement = document.getElementById('carriage-number'); //string
-
-    let ticketCodeElement = document.getElementById('ticket-code'); //string
+    let ticketCodeElement = document.getElementById('ticket-code'); //object || null
 
 
 
@@ -124,17 +124,17 @@ inputSubmitElement.addEventListener('click', function(){
 
 inputCancelElement.addEventListener('click', function(){
 
-    let fullPriceElement = document.getElementById('full-price'); //string
+    let fullPriceElement = document.getElementById('full-price'); //object || null
 
-    let discountElement = document.getElementById('discount'); //string
+    let discountElement = document.getElementById('discount'); //object || null
 
-    let finalPriceElement = document.getElementById('final-price'); //string
+    let finalPriceElement = document.getElementById('final-price'); //object || null
 
-    let passengerNameElement = document.getElementById('passenger-name'); //string
+    let passengerNameElement = document.getElementById('passenger-name'); //object || null
 
-    let carriageNumberElement = document.getElementById('carriage-number'); //string
+    let carriageNumberElement = document.getElementById('carriage-number'); //object || null
 
-    let ticketCodeElement = document.getElementById('ticket-code'); //string
+    let ticketCodeElement = document.getElementById('ticket-code'); //object || null
 
 
 
