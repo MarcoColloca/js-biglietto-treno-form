@@ -45,3 +45,7 @@ input{
     
 }
 
+
+.gx-15{
+    --bs-gutter-x: 15rem;
+}

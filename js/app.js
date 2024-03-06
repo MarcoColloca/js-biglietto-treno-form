@@ -34,7 +34,7 @@ let inputSubmitElement = document.getElementById('ticket-price');
 
 // console.log(inputSubmitElement);
 
-
+let inputCancelElement = document.getElementById('ticket-cancel');
 
 
 
@@ -123,3 +123,31 @@ inputSubmitElement.addEventListener('click', function(){
 
 
 
+inputCancelElement.addEventListener('click', function(){
+
+    let fullPriceElement = document.getElementById('full-price');
+
+    let discountElement = document.getElementById('discount');
+
+    let finalPriceElement = document.getElementById('final-price');
+
+    let passengerNameElement = document.getElementById('passenger-name')
+
+    let carriageNumberElement = document.getElementById('carriage-number')
+
+    let ticketCodeElement = document.getElementById('ticket-code')
+
+
+
+    fullPriceElement.innerHTML = '-';
+
+    discountElement.innerHTML = '-';
+
+    finalPriceElement.innerHTML = '-';
+
+    passengerNameElement.innerHTML = '-';
+
+    carriageNumberElement.innerHTML = '-';
+
+    ticketCodeElement.innerHTML = '-';
+})
