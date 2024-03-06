@@ -74,12 +74,12 @@ inputSubmitElement.addEventListener('click', function(){
     } if(passenger == ""){
         alert('Attenzione!! Inserire Nome e Cognome.');
 
-    }else if (age == 'minorenne'){
+    }else if (age === 'minorenne'){
 
         let discount = basePrice * 0.2; //Number
         totalPrice = basePrice - discount; //Number
     
-    } else if (age == 'over65'){
+    } else if (age === 'over65'){
     
         let discount = basePrice * 0.4 //Number
         totalPrice = basePrice - discount; //Number
