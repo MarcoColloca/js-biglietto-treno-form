@@ -107,7 +107,7 @@ inputSubmitElement.addEventListener('click', function(){
 
 
 
-    fullPriceElement.innerHTML = basePrice + ' €';
+    fullPriceElement.innerHTML = basePrice.toFixed(2) + ' €';
 
     discountElement.innerHTML = age;
 
